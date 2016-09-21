@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timestamp Microservice</h1>
+      <p>
+        You can use this service to retrieve Unix timestamp and natrual language
+        form of a date given in Unix timestamp or natural language format.
+      </p>
+      <h2>Example usage</h2>
+      <ul>
+        <li>
+          <p>
+            Querying details for a date given in Unix timestamp format
+          </p>
+          <p>
+            <code><%= schemeAndHttpHost %>/1474416000</code>
+          </p>
+        </li>
+        <li>
+          <p>
+            Querying details for a date given in natrual language form
+          </p>
+          <p>
+            <code><%= schemeAndHttpHost %>/September%2021,%202016</code>
+          </p>
+        </li>
+      </ul>
+      <h2>Example output</h2>
+      <p>
+        <code>{"unix":1474416000,"natural":"September 21, 2016"}</code>
+      </p>
+    </div>
+  </body>
+</html>
